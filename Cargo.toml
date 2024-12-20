@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "src/Learn-Fi-backend"
+]
+resolver = "2"

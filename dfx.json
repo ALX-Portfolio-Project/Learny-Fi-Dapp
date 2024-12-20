@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "Learn-Fi-backend": {
+      "candid": "src/Learn-Fi-backend/Learn-Fi-backend.did",
+      "package": "Learn-Fi-backend",
+      "type": "rust"
+    },
+    "Learn-Fi-frontend": {
+      "dependencies": [
+        "Learn-Fi-backend"
+      ],
+      "source": [
+        "src/Learn-Fi-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "Learn-Fi-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
